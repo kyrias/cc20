@@ -1,6 +1,6 @@
 extern crate byteorder;
 
-use byteorder::{LittleEndian, WriteBytesExt, ReadBytesExt};
+use byteorder::{LittleEndian, WriteBytesExt};
 
 
 const CHACHA20_BLOCK_SIZE: usize = 64;
