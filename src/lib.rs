@@ -45,7 +45,7 @@ pub fn chacha20(key: [u32; 8], counter: u32, nonce: [u32; 3], data: &mut Vec<u8>
     ];
 
     let mut keystream = Vec::new();
-    for block in 0..((data.len() as f64 / CHACHA20_BLOCK_SIZE as f64).ceil() as usize) {
+    for _ in 0..((data.len() as f64 / CHACHA20_BLOCK_SIZE as f64).ceil() as usize) {
         chacha20_block(state, &mut keystream);
         state[12] += 1; // Update counter
     }
