@@ -1,6 +1,8 @@
 [package]
 name = "cc20"
 version = "0.1.0"
+license = "ISC"
+license-file = "LICENSE"
 authors = ["Johannes Löthberg <johannes@kyriasis.com>"]
 
 [dependencies]
